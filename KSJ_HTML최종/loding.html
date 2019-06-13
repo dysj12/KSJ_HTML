@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kang Seung jae Protfolio</title>
+        <link rel="shortcut icon" href="img/shortcut_icon.png" type="image/vnd.microsoft_icon">
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="user-scalable=no,initial-scale=1" />
+        <meta  http-equiv="refresh" content="5; url=KSJ_Profile.html">
+       
+        <link rel="stylesheet" href="css/KSJ_Profile.css">
+
+
+        <style>
+        section{
+            font-size: 2em;
+            
+        }
+        
+        #loding_png{
+            height: 25px;
+        }
+     
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div><p id="loding"></p></div>
+            <div class="Png"><img id="loding_png" src="img/ajax-loader.gif"></div>
+        </section>
+
+    </body>
+
+    
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+    
+   <script type="text/javascript">
+   var app = document.getElementById('loding');
+   var typewriter = new Typewriter(app, {
+       loop: true
+   });
+
+   typewriter.typeString('wait a minute please')
+       .pauseFor(1000)
+    typewriter.typeString('. . .')
+        .pauseFor(2500)
+       .deleteAll()
+       .start();
+   </script>
+        </html>
